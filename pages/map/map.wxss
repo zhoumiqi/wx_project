@@ -1,0 +1,42 @@
+/* map.wxss */
+.city_list_class{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: white;
+  vertical-align: middle;
+}
+.txt{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+.divider_class{
+  background-color: gainsboro;
+  width: 100%;
+  height: 1px;
+}
+.txt_index{
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  background-color: gainsboro;
+}
+.city_list_selector{
+ position: absolute;
+    width: 30rpx;
+    height: auto;
+    right: 0;
+    font-size: 10px;
+}
+.txt_selector{
+   width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: blue;
+  background-color: transparent;
+  align-content:center;
+  align-self: center;
+}

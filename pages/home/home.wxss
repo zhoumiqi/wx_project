@@ -1,0 +1,4 @@
+/* home.wxss */
+.center_horirontal{
+  width: 100%;
+}

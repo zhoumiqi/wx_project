@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/contact/contact",
+    "pages/login/login",
+    "pages/mime/mime",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/call/call",
+    "pages/map/map",
+    "pages/city/city",
+    "pages/query/query",
+    "pages/shopDetail/shopDetail",
+    "pages/weather/weather"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wxProgram",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#0099FF",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "selectedIconPath": "./pages/image/icon_huangye.png",
+        "iconPath": "./pages/image/icon_huangye_hui.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查号",
+        "selectedIconPath": "./pages/image/voice_icon_dial.png",
+        "iconPath": "./pages/image/icon_bohao_hui.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "多媒体",
+        "selectedIconPath": "./pages/image/icon_tongxunlu.png",
+        "iconPath": "./pages/image/icon_tongxunlu_hui.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "selectedIconPath": "./pages/image/icon_wode.png",
+        "iconPath": "./pages/image/icon_wode_hui.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

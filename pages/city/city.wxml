@@ -1,0 +1,27 @@
+<!--city.wxml-->
+<scroll-view class="scroll_view_class" scroll-y scroll-top="{{scrollTop}}" scroll-into-view="{{toView}}" style="height:{{windowHeight}}px;">
+  <view class="city_list_class">
+    <view class="city_head">
+      <text class="txt_ding" data-value="定" value="ding" id="ding">当前GPS定位城市</text>
+      <view class="location_view_class" style="flex-direction:row;">
+        <text class="txt_btn_class" bindtap="onItemClick" data-value="{{locCityName}}">{{locCityName}}</text>
+        <icon class="icon_class" bindtap="locate" type="download" color="#00ccbe" />
+      </view>
+      <text class="txt_index" data-value="热" value="re" id="re">热门城市</text>
+    </view>
+    <view class="hot_city_class" wx:for="{{rowsArr}}" wx:for-item="i" wx:key="i">
+      <text class="txt_btn_hot_class" wx:if="{{hotCityList[i*colums+j].name}}" bindtap="onItemClick" wx:for="{{columsArr}}" wx:for-item="j" data-position="{{j}}" wx:key="j" data-value="{{hotCityList[i*colums+j].name}}">{{hotCityList[i*colums+j].name}}</text>
+      <!-- 添加灰色按钮是为了应对最后一列出现部分空缺的情况,即热门城市总个数和列数不能整除 -->
+      <text class="txt_btn_hot_class_grey" wx:if="{{!hotCityList[i*colums+j].name}}" wx:for="{{columsArr}}" wx:for-item="j" data-position="{{j}}" wx:key="j" data-value="{{hotCityList[i*colums+j].name}}">{{hotCityList[i*colums+j].name}}</text>
+    </view>
+    <block style="margin-bottom: 10px;" wx:for="{{cityList}}" wx:for-item="city" wx:key="*this">
+      <text class="txt_index" id="{{city.index}}" wx:if="{{index==0||(index>1&&cityList[index].index!=cityList[index-1].index)}}">{{city.index}}</text>
+      <text class="txt" data-value="{{city.name}}" bindtap="onItemClick" value="{{city.name}}" id="{{city.name}}">{{city.name}}</text>
+      <view class="divider_class"></view>
+    </block>
+  </view>
+</scroll-view>
+<view class="city_list_selector" style="top:{{selectorTop}}px">
+  <view wx:for="{{cityListSelector}}" wx:for-item="citySelector" data-position="{{index}}" wx:key="name" data-value="{{citySelector.name}}" catchtouchstart="onItemTouchstart" catchtouchmove="onItemTouchmove" catchtouchend="onItemTouchend">{{citySelector.name}}</view>
+</view>
+<view class="selector-name" wx:if="{{selectNameShow}}">{{selectName}}</view>

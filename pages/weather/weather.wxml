@@ -1,0 +1,17 @@
+<view class="bg_class" style="width:{{windowWidth}}px;height:{{windowHeight}}px;">
+<view class="head_class" style="width:100%;height:30%;background-color:#eeeeee;">
+  <view class="input_view_class">
+    <icon class="icon_loc_class" type="search" color="#00ccbe" />
+    <input class="input_class" placeholder="{{placeholder}}" value="{{inputValue}}" bindblur="onFoucusLosted" bindinput="onTextChanged" bindfocus="onFocused" />
+  </view>
+</view>
+<view class="item_class">
+    <view class="bottom_class" >
+      <!-- 使用image标签必须是网络图片 -->
+      <text class="item_txt_class" bindtap="queryCurrrent">查询今天天气</text>
+      <view class="divider_vertical_class" />
+      <text  class="item_txt_class" bindtap="queryFuture">查询未来7天</text>
+    </view>
+  </view>
+<textarea maxlength="1000" style="width:{{windowWidth}}px;height:{{windowHeight/2}}px;" value="{{result}}" />
+</view>

@@ -1,0 +1,37 @@
+<!--login.wxml-->
+<!--<text class="txt">用户名：</text>-->
+
+<!-- <view style="display:flex;flex-direction:row;">
+  <icon type="info" color="#00ccbe" />
+  <input class="input_class" type="text" placeholder="{{userNameHint}}" placeholder-style="color:grey" bindfocus="onUserNameFoucused" bindblur="onUserNameFoucusLosted" />
+  <!--<icon type="clear" color="#999999" bindtap="clearInput" />-->
+<!--</view> -->
+
+<!--<text class="txt_login">密码：</text>-->
+<!-- <view style="display:flex;flex-direction:row;">
+  <icon type="download" color="#00ccbe" />
+  <input class="input_class" type="text" placeholder="{{passwordHint}}" placeholder-style="color:grey" password bindfocus="onPasswordFoucused" bindblur="onPasswordFoucusLosted" />
+</view> -->
+<button type="primary" bindtap="login">调用登录接口获取open_id和session_id</button>
+<text class="txt">用户信息：{{userInfo}}</text>
+<button type="primary" bindtap="getLocationInfo">获取经纬度并打开内置地图</button>
+<text class="txt">当前经纬度:{{location}}</text>
+<button type="primary" bindtap="chooseLocation">打开地图选择位置</button>
+<text class="txt">选择的位置信息：{{chooseLocation}}</text>
+<button type="primary" bindtap="chooseImage">选择图片</button>
+<!-- <button bindtap="openDocument">下载并打开PDF文件</button> -->
+
+<map id="myMap" show-location style="width: 100%; height: 300px;" />
+
+<button type="primary" bindtap="getCenterLocation">获取当前地图中心的经纬度</button>
+<button type="primary" bindtap="moveToLocation">将地图中心移动到当前定位点</button>
+<button type="primary" bindtap="translateMarker">平移标注带动画</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+<button type="primary" bindtap="callPhone">拨打10010</button>
+<button type="primary" bindtap="scanCode">扫码</button>
+<button type="primary" bindtap="showToast">showToast</button>
+<button type="primary" bindtap="hideToast">hideToast</button>
+<button type="primary" bindtap="showLoading">showLoading</button>
+<button type="primary" bindtap="hideLoding">hideLoding</button>
+<button type="primary" bindtap="showModal">​显示模态弹窗</button>
+<button type="primary" bindtap="showActionSheet">​​显示操作菜单</button>

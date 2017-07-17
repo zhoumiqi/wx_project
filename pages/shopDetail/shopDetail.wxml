@@ -1,0 +1,26 @@
+<!--shopDetail.wxml-->
+<view class="bg_class" style="width:{{windowWidth}}px;height:{{windowHeight}}px;">
+
+  <view class="item_class">
+    <text class="item_txt_class">{{name}}</text>
+    <view class="divider_class" />
+    <view class="address_class" bindtap="makeCall">
+      <text class="item_txt_class" style="color:blue;">{{tel}}</text>
+      <icon class="icon_loc_class" type="search" color="#00ccbe" />
+    </view>
+    <view class="divider_class" />
+    <view class="address_class" bindtap="goToMap">
+      <!-- 使用image标签必须是网络图片 -->
+      <text class="item_txt_class">{{address}}</text>
+      <icon class="icon_loc_class" type="download" color="#00ccbe" />
+    </view>
+  </view>
+  <view class="item_class">
+    <view class="bottom_class">
+      <!-- 使用image标签必须是网络图片 -->
+      <text class="item_txt_class" bindtap="collect">收藏</text>
+      <view class="divider_vertical_class" />
+      <text class="item_txt_class" bindtap="goToCorrect">纠错</text>
+    </view>
+  </view>
+</view>

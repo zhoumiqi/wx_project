@@ -1,0 +1,23 @@
+<!--search.wxml-->
+<view class="location_view_class" style="flex-direction:row;" bindtap="goToCity">
+  <icon class="icon_class" bindtap="locate" type="download" color="#00ccbe" />
+  <text class="txt_btn_class">{{locCityName}}</text>
+</view>
+<view class="text_view_class">
+  <text class="txt_114">114</text>
+  <text class="txt_chahao">查号</text>
+</view>
+
+<view class="input_view_class" bindtap="goToQuery">
+  <text class="input_class" >请输入商户名称</text>
+  <icon class="icon_search_class" bindtap="search" type="search" color="#00ccbe" />
+</view>
+<view class="menu_list_class" >
+  <view class="menu_class" wx:for="{{menuList}}" wx:for-item="menu" wx:key="id" bindtap="onMenueItemClick" data-key="{{menu.name}}">
+    <image src="{{menu.src}}" class="menu_src_class" ></image>
+    <text class="menu_txt_class">{{menu.name}}</text>
+  </view>
+</view>
+
+<image mode="aspectFit" class="image_guid_class" src="../image/qiandaoyingdao.png">
+</image>

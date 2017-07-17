@@ -1,0 +1,10 @@
+/* login.wxss */
+.txt{
+  color:black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_class{
+  background-color: white
+}

@@ -1,0 +1,10 @@
+/* call.wxss */
+
+.call_style {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.hover_blue{
+  color: blue;
+}

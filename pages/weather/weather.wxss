@@ -1,0 +1,83 @@
+/* weather.wxss */
+
+.bg_class {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.head_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.input_view_class {
+  background-color: white;
+  border-radius: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+}
+
+.input_class {
+  width: 100%;
+}
+
+.txt_search_class {
+  width: 20%;
+  color: blue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.item_class {
+  background-color: green;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-cestart;
+  vertical-align: middle;
+}
+
+.bottom_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-around;
+}
+
+.item_txt_class {
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+  width: auto;
+  color: white;
+}
+
+.divider_vertical_class {
+  height: 40px;
+  width: 1px;
+  margin: 5px;
+  background-color: white;
+}

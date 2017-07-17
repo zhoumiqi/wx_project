@@ -1,0 +1,43 @@
+<!--pages/mime/mime.wxml-->
+<text>{{mime_content}}</text>
+<view >{{user.userName}}</view>
+<view >{{user.password}}</view>
+<button bindtap="changeUserInfo">change user info</button>
+<view >{{index}}</view>
+<button bindtap="changeIndex">change index</button>
+<button bindtap="addNewValue">添加新的值</button>
+<view >{{arr[0].msg}}</view>
+<button bindtap="changeArrayValue">change array value</button>
+<button bindtap="callPhoneUtilMethod">调用共用util模块的方法</button>
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active backgroundColor="blue"/>
+
+<view class="section section_gap">
+<view class="section__title">表单组件在label内</view>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="label-1" wx:for="{{checkboxItems}}">
+    <label>
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="label-1__icon">
+        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      <text class="label-1__text">{{item.value}}</text>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+
+<view class="section section_gap">
+<view class="section__title">label用for标识表单组件</view>
+<radio-group class="group" bindchange="radioChange">
+  <view class="label-2" wx:for="{{radioItems}}">
+    <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+    <view class="label-2__icon">
+      <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+    </view>
+    <label class="label-2__text" for="{{item.name}}"><text>{{item.name}}</text></label>
+  </view>
+</radio-group>
+</view>

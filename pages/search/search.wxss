@@ -1,0 +1,98 @@
+/* search.wxss */
+
+.location_view_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.txt_btn_class {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.icon_class {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.input_view_class {
+  background-color: gainsboro;
+  border-radius: 0.5rem;
+  padding-left: 20px;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.input_class {
+  width: 90%;
+  color: grey;
+}
+
+.icon_search_class {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  vertical-align: middle;
+  width: 10%;
+}
+.text_view_class{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100px;
+}
+.txt_114{
+  color: blue;
+  font-size: 40px;
+  width: 50%;
+  text-align: right;
+}
+.txt_chahao{
+  font-size: 40px;
+  width: 50%;
+  text-align: left;
+}
+.image_guid_class{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.menu_list_class{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  justify-content:center;
+}
+.menu_class{
+    display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 10px;
+}
+.menu_txt_class{
+  margin-top: 5px;
+}
+.menu_src_class{
+  width: 23px;
+  height: 23px;
+}

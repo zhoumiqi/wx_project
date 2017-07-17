@@ -1,0 +1,33 @@
+<!--home.wxml-->
+<!-- <button bindtap="reloadContact">reload page contact</button>
+<button bindtap="switchPage">切换到我的页面</button> -->
+<!--<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px;width: 200px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px;width: 100px;background: red;">
+    <movable-view style="height: 200px; width: 200px; background: blue;">
+    </movable-view>
+  </movable-area>
+</view>-->
+
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop class="center_horirontal"></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+
+<!-- <video src="{{video_url}}" controls class="center_horirontal"></video>
+<button bindtap="{{getVideoUrl}}">获取本地视频或者拍摄视频</button> -->
+
+<video id="myVideoId" class="center_horirontal" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+  danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <input bindblur="onFoucusLost" bindfocus="onFoucused" style="width:100%;height:30px;" placeholder="{{placeholder}}"/>
+<button type="primary" bindtap="sendDanmu">发送弹幕</button>
